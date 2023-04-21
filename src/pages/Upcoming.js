@@ -22,6 +22,7 @@ const Upcoming = (props) => {
             <td>
               <Clickable style={{ color: 'red' }}>
                 <Link
+                  style={{ color: 'red' }}
                   className={classes.link}
                   onClick={() => abortLaunch(launch.flightNumber)}
                 >
