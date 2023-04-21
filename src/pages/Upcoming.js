@@ -21,16 +21,12 @@ const Upcoming = (props) => {
         return (
           <tr key={String(launch.flightNumber)}>
             <td>
-              <Clickable style={{ color: 'red', zIndex: '10' }}>
-                <Link
-                  style={{ color: 'red' }}
-                  className={classes.link}
-                  onClick={() => abortLaunch(launch.flightNumber)}
-                >
-                  {/* <TiDeleteOutline style={{ color: 'red', zIndex: '10' }} /> */}
-                  <span style={{ color: 'red', zIndex: '10' }}>✖</span>
-                </Link>
-              </Clickable>
+              <Link
+                style={{ color: 'red', backgroundColor: 'transparent' }}
+                onClick={() => abortLaunch(launch.flightNumber)}
+              >
+                ✖
+              </Link>
             </td>
             <td>{launch.flightNumber}</td>
             <td>{new Date(launch.launchDate).toDateString()}</td>
