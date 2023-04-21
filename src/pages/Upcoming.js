@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { withStyles, Appear, Link, Paragraph, Table, Words } from 'arwes';
+import { TiDeleteOutline } from 'react-icons/ti';
 
 import Clickable from '../components/Clickable';
 
@@ -20,12 +21,13 @@ const Upcoming = (props) => {
         return (
           <tr key={String(launch.flightNumber)}>
             <td>
-              <Clickable style={{ color: 'red' }}>
+              <Clickable style={{ color: 'red', zIndex: '10' }}>
                 <Link
                   style={{ color: 'red' }}
                   className={classes.link}
                   onClick={() => abortLaunch(launch.flightNumber)}
                 >
+                  {/* <TiDeleteOutline style={{ color: 'red', zIndex: '10' }} /> */}
                   <span style={{ color: 'red', zIndex: '10' }}>✖</span>
                 </Link>
               </Clickable>
