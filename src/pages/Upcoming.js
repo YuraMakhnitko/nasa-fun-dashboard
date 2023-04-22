@@ -1,6 +1,5 @@
 import { useMemo } from 'react';
 import { withStyles, Appear, Link, Paragraph, Table, Words } from 'arwes';
-import { TiDeleteOutline } from 'react-icons/ti';
 
 import Clickable from '../components/Clickable';
 
