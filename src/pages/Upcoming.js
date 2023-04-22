@@ -31,7 +31,7 @@ const Upcoming = (props) => {
                   <span style={{ color: 'red', zIndex: '10' }}>✖</span>
                 </Link>
               </Clickable>
-              <p style={{ color: 'red' }}>✖</p>
+              <p style={{ color: 'rgb(212, 7, 7)' }}>✖</p>
             </td>
             <td>{launch.flightNumber}</td>
             <td>{new Date(launch.launchDate).toDateString()}</td>
